@@ -1,0 +1,104 @@
+/* Personal.module.css */
+.backgroundImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url(''); /* Adjust the path */
+    background-size: cover;
+    background-position: center;
+   
+  }
+  
+  .formContainer {
+    max-width: 568px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+    gap:10px;
+  }
+  
+  .titleWithLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .logo {
+    width: 50px;
+    margin-bottom: 15px; /* Adjust based on your design */
+  }
+  
+  .sectionTitle {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 500;
+  }
+  
+  .formGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 25px;
+    align-items: center;
+    
+  }
+  
+  .formGroup label {
+    font-size: 18px;
+    color: #34495e;
+    flex-basis: 25%;
+    text-align: left;
+    padding-right: 15px;
+    font-weight: 400;
+  }
+  
+  .formControl {
+    padding: 12px 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    flex: 1;
+    background-color: #fafafa;
+  }
+  
+  .formControl:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  }
+  
+  .error {
+    color: #e74c3c;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .formGroup {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .formGroup label {
+      text-align: left;
+      padding-right: 0;
+      flex-basis: auto;
+      margin-bottom: 10px;
+    }
+  }
+  
